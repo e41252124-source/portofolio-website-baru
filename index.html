@@ -1,0 +1,1225 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portofolio Resmi Aryasha Yusuf Pratama - Mahasiswa D4 Teknik Informatika Politeknik Negeri Jember. UI/UX Designer, Front-End Developer, dan Software Quality Assurance.">
+  <title>Aryasha Yusuf Pratama | Portofolio Pribadi & Mahasiswa D4 Teknik Informatika</title>
+  
+  <!-- Font & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background Animated Glows -->
+  <div class="bg-glow bg-glow-1"></div>
+  <div class="bg-glow bg-glow-2"></div>
+
+  <!-- Navbar -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#home" class="nav__logo" aria-label="Beranda Portofolio Aryasha">
+        <span class="logo-icon"><i class="fa-solid fa-code"></i></span>
+        <span class="logo-text">Aryasha<span class="logo-accent">.dev</span><span class="logo-dot">.</span></span>
+      </a>
+
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link active-link">Beranda</a></li>
+          <li class="nav__item"><a href="#about" class="nav__link">Profil</a></li>
+          <li class="nav__item"><a href="#education" class="nav__link">Pendidikan</a></li>
+          <li class="nav__item"><a href="#experience" class="nav__link">Pengalaman</a></li>
+          <li class="nav__item"><a href="#certifications" class="nav__link">Sertifikasi</a></li>
+          <li class="nav__item"><a href="#projects" class="nav__link">Proyek</a></li>
+          <li class="nav__item"><a href="#activities" class="nav__link">Aktivitas</a></li>
+          <li class="nav__item"><a href="#achievements" class="nav__link">Prestasi</a></li>
+          <li class="nav__item"><a href="#contact" class="nav__link">Kontak</a></li>
+        </ul>
+        <button class="nav__close" id="nav-close" aria-label="Tutup Menu">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <div class="nav__actions">
+        <!-- Theme Toggle -->
+        <button class="theme-toggle" id="theme-toggle" aria-label="Ubah Tema Gelap atau Terang" title="Ubah Tema">
+          <i class="fa-solid fa-moon" id="theme-icon"></i>
+        </button>
+        <!-- Mobile Toggle -->
+        <button class="nav__toggle" id="nav-toggle" aria-label="Buka Menu Navigasi">
+          <i class="fa-solid fa-bars-staggered"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main">
+    <!-- HERO SECTION -->
+    <section class="home section" id="home">
+      <div class="home__container container grid">
+        <div class="home__data">
+          <div class="badge-status">
+            <span class="pulse-dot"></span> Mahasiswa Aktif & Terbuka untuk Kolaborasi
+          </div>
+          <h1 class="home__title">
+            Halo, Saya <span class="text-gradient">Aryasha Yusuf Pratama</span>
+          </h1>
+          <h2 class="home__subtitle">Mahasiswa Teknik Informatika | UI/UX Designer | Front-End Developer | Software Quality Assurance</h2>
+          <p class="home__description">
+            Saya mahasiswa D4 Teknik Informatika di Politeknik Negeri Jember yang memiliki minat dalam pengembangan perangkat lunak, desain antarmuka, pengujian kualitas aplikasi, dan pengembangan game. Saya senang mempelajari teknologi baru, berkolaborasi dalam tim, serta mengembangkan solusi digital yang bermanfaat dan mudah digunakan.
+          </p>
+
+          <div class="home__buttons">
+            <a href="#projects" class="btn btn-primary">
+              <i class="fa-solid fa-diagram-project"></i> Lihat Portofolio
+            </a>
+            <a href="#contact" class="btn btn-outline">
+              <i class="fa-regular fa-paper-plane"></i> Hubungi Saya
+            </a>
+            <a href="assets/cv/CV_Aryasha_Yusuf_Pratama.pdf" download="CV_Aryasha_Yusuf_Pratama.pdf" class="btn btn-ghost" id="download-cv" title="Unduh Curriculum Vitae Asli">
+              <i class="fa-solid fa-file-arrow-down"></i> Unduh CV
+            </a>
+          </div>
+
+          <div class="home__social">
+            <a href="https://www.linkedin.com/in/aryasha-yusuf-pratama-3a4776416" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn Resmi Aryasha Yusuf Pratama" title="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="mailto:aryashayusuf@gmail.com" class="social-icon" aria-label="Email Pribadi Aryasha Yusuf Pratama" title="Kirim Email">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+            <a href="https://wa.me/62812258863092" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="WhatsApp Resmi Aryasha Yusuf Pratama" title="WhatsApp">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="home__img-wrapper">
+          <div class="blob-frame">
+            <div class="profile-card">
+              <div class="avatar-holder" id="avatar-holder">
+                <!-- Foto Profil Pribadi -->
+                <img src="assets/images/profile/profile.jpg" alt="Foto Profil Aryasha Yusuf Pratama" class="home__img" id="profile-img">
+                <!-- Fallback Monogram Elegan jika foto belum dimasukkan -->
+                <div class="avatar-fallback" id="avatar-fallback">
+                  <span class="avatar-initials">AY</span>
+                  <span class="avatar-note"><i class="fa-solid fa-user"></i> Foto Profil</span>
+                </div>
+              </div>
+              <div class="floating-badge badge-top">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <div>
+                  <h4>IPK 3,95</h4>
+                  <span>Politeknik Negeri Jember</span>
+                </div>
+              </div>
+              <div class="floating-badge badge-bottom">
+                <i class="fa-solid fa-layer-group"></i>
+                <div>
+                  <h4>D4 TIF</h4>
+                  <span>Teknik Informatika</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROFIL / TENTANG SAYA -->
+    <section class="about section" id="about">
+      <div class="container">
+        <div class="section-title-wrap text-center">
+          <p class="section__subtitle">Kenali Lebih Dekat</p>
+          <h2 class="section__title">Profil & Keahlian</h2>
+          <div class="title-bar"></div>
+        </div>
+
+        <div class="about__container grid">
+          <div class="about__data">
+            <h3>Membangun Solusi Digital dengan Kualitas & Kreativitas</h3>
+            <p>
+              Saya adalah mahasiswa D4 Teknik Informatika di Politeknik Negeri Jember dengan ketertarikan pada pengembangan teknologi dan desain digital. Saya memiliki pengalaman melalui kegiatan Project Based Learning, pengembangan aplikasi web, desain UI/UX, Software Quality Assurance, dan pengembangan game.
+            </p>
+            <p>
+              Selain keterampilan teknis, saya aktif mengembangkan kemampuan komunikasi, kepemimpinan, kerja sama tim, serta organisasi. Saya memiliki semangat untuk terus belajar dan meningkatkan keterampilan profesional melalui berbagai pengalaman serta proyek.
+            </p>
+
+            <div class="about__info-grid">
+              <div class="info-item">
+                <div class="info-icon"><i class="fa-regular fa-user"></i></div>
+                <div class="info-details">
+                  <span class="info-label">Nama Lengkap</span>
+                  <span class="info-value">Aryasha Yusuf Pratama</span>
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div class="info-details">
+                  <span class="info-label">Domisili</span>
+                  <span class="info-value">Wonogiri, Jawa Tengah</span>
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="info-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                <div class="info-details">
+                  <span class="info-label">Status Akademik</span>
+                  <span class="info-value status-available">Mahasiswa Aktif D4 TIF (IPK 3,95)</span>
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="info-icon"><i class="fa-solid fa-language"></i></div>
+                <div class="info-details">
+                  <span class="info-label">Bahasa</span>
+                  <span class="info-value">Indonesia (Fasih) & English (Dasar)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills__box">
+            <h3>Tech Stack & Keterampilan</h3>
+            <div class="skills__groups">
+              <!-- Programming -->
+              <div class="skills__category">
+                <h4><i class="fa-solid fa-code"></i> Pemrograman</h4>
+                <div class="skill-tags">
+                  <span class="tag"><i class="fa-brands fa-html5"></i> HTML5</span>
+                  <span class="tag"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+                  <span class="tag"><i class="fa-brands fa-js"></i> JavaScript</span>
+                  <span class="tag"><i class="fa-brands fa-php"></i> PHP</span>
+                  <span class="tag"><i class="fa-solid fa-mobile-screen-button"></i> Flutter</span>
+                  <span class="tag"><i class="fa-solid fa-terminal"></i> C++</span>
+                  <span class="tag"><i class="fa-brands fa-java"></i> Java Dasar</span>
+                </div>
+              </div>
+
+              <!-- Design & Game Tools -->
+              <div class="skills__category">
+                <h4><i class="fa-solid fa-palette"></i> Desain & Game Tools</h4>
+                <div class="skill-tags">
+                  <span class="tag"><i class="fa-brands fa-figma"></i> Figma</span>
+                  <span class="tag"><i class="fa-solid fa-brush"></i> Canva</span>
+                  <span class="tag"><i class="fa-solid fa-pen-nib"></i> Corel</span>
+                  <span class="tag"><i class="fa-brands fa-unity"></i> Unity</span>
+                  <span class="tag"><i class="fa-solid fa-cube"></i> Blender</span>
+                  <span class="tag"><i class="fa-solid fa-gamepad"></i> Construct</span>
+                </div>
+              </div>
+
+              <!-- Networking & Infrastructure -->
+              <div class="skills__category">
+                <h4><i class="fa-solid fa-network-wired"></i> Jaringan Komputer & Server</h4>
+                <div class="skill-tags">
+                  <span class="tag">Router & Switch</span>
+                  <span class="tag">Routing Statis & Dinamis</span>
+                  <span class="tag">MikroTik</span>
+                  <span class="tag">DHCP & DNS Server</span>
+                  <span class="tag">Web & FTP Server</span>
+                </div>
+              </div>
+
+              <!-- Tools & Soft Skills -->
+              <div class="skills__category">
+                <h4><i class="fa-solid fa-users"></i> Produktivitas & Soft Skills</h4>
+                <div class="skill-tags">
+                  <span class="tag">VS Code</span>
+                  <span class="tag">Trello</span>
+                  <span class="tag">Microsoft Office</span>
+                  <span class="tag">Public Speaking</span>
+                  <span class="tag">Leadership</span>
+                  <span class="tag">Teamwork</span>
+                  <span class="tag">Communication</span>
+                  <span class="tag">Critical Thinking</span>
+                  <span class="tag">Problem Solving</span>
+                  <span class="tag">Organizational Skills</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PENDIDIKAN -->
+    <section class="education section" id="education">
+      <div class="container">
+        <div class="section-title-wrap text-center">
+          <p class="section__subtitle">Jejak Akademik</p>
+          <h2 class="section__title">Riwayat Pendidikan</h2>
+          <div class="title-bar"></div>
+        </div>
+
+        <div class="timeline">
+          <!-- Item 1: Polije -->
+          <div class="timeline__item">
+            <div class="timeline__marker">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <div class="timeline__content">
+              <span class="timeline__date">2025 – Sekarang</span>
+              <h3 class="timeline__title">D4 Teknik Informatika</h3>
+              <h4 class="timeline__org"><i class="fa-solid fa-building-columns"></i> Politeknik Negeri Jember</h4>
+              <p class="timeline__text">
+                Menempuh pendidikan vokasi sarjana terapan dengan <strong>IPK Kumulatif 3,95</strong>. Fokus pembelajaran mendalam pada rekayasa perangkat lunak, sistem informasi modern, pengujian dan kualitas perangkat lunak, serta teknologi multimedia permainan.
+              </p>
+              <div class="timeline__tags">
+                <span>Konsep Basis Data</span>
+                <span>Pemrograman Dasar (Java)</span>
+                <span>Pengembangan Perangkat Lunak</span>
+                <span>Pemrograman Berorientasi Objek</span>
+                <span>Interaksi Manusia dan Komputer</span>
+                <span>Sistem Informasi Berbasis Dekstop</span>
+                <span>Sistem Informasi Berbasis Web & Framework</span>
+                <span>Manajemen & Perencanaan Proyek</span>
+                <span>Pengujian Perangkat Lunak</span>
+                <span>Manajemen Kualitas Perangkat Lunak</span>
+                <span>Perawatan Perangkat Lunak</span>
+                <span>Multimedia Permainan</span>
+                <span>Sistem Cerdas & Pengolahan Citra</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2: SMK Negeri 1 Giritontro -->
+          <div class="timeline__item">
+            <div class="timeline__marker">
+              <i class="fa-solid fa-school"></i>
+            </div>
+            <div class="timeline__content">
+              <span class="timeline__date">2022 – 2025</span>
+              <h3 class="timeline__title">Teknik Jaringan Komputer dan Telekomunikasi</h3>
+              <h4 class="timeline__org"><i class="fa-solid fa-school-flag"></i> SMK Negeri 1 Giritontro</h4>
+              <p class="timeline__text">
+                Mendapatkan keahlian komprehensif dalam perakitan komputer, instalasi dan konfigurasi sistem operasi (Windows & Linux), troubleshooting perangkat keras/lunak, serta administrasi jaringan berbasis MikroTik dan pengalamatan IP.
+              </p>
+              <div class="timeline__tags">
+                <span>Perakitan PC & Laptop</span>
+                <span>Instalasi Windows & Linux</span>
+                <span>Troubleshooting Hardware & Software</span>
+                <span>Konfigurasi MikroTik</span>
+                <span>Pengalamatan IP</span>
+                <span>Manajemen Bandwidth & NAT</span>
+                <span>Administrasi Sistem Jaringan</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PENGALAMAN -->
+    <section class="experience section" id="experience">
+      <div class="container">
+        <div class="section-title-wrap text-center">
+          <p class="section__subtitle">Karier & Kontribusi Nyata</p>
+          <h2 class="section__title">Pengalaman Kerja & Proyek</h2>
+          <div class="title-bar"></div>
+        </div>
+
+        <div class="experience__container grid" id="experience-grid">
+          <!-- Card 1: UMKM BU Nanda -->
+          <div class="experience__card">
+            <div class="exp-header">
+              <div class="exp-role">
+                <span class="exp-period">September 2025 – Desember 2025</span>
+                <h3>Software Developer</h3>
+                <h4 class="company-name"><i class="fa-solid fa-store"></i> UMKM BU Nanda</h4>
+              </div>
+              <span class="work-badge">Project Based Learning</span>
+            </div>
+            <ul class="exp-tasks">
+              <li>Menganalisis kebutuhan pengguna aplikasi kasir (UMKM BU Nanda) berbasis desktop.</li>
+              <li>Menyusun daftar kebutuhan fitur transaksi penjualan yang dimasukkan ke rancangan pengembangan.</li>
+              <li>Merancang dan membangun modul perangkat lunak bagian transaksi penjualan pada aplikasi kasir.</li>
+              <li>Mengimplementasikan antarmuka dan logika sistem menggunakan HTML, CSS, dan JavaScript.</li>
+            </ul>
+            <div class="tech-used">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>JavaScript</span>
+              <span>Analisis Kebutuhan</span>
+            </div>
+          </div>
+
+          <!-- Card 2: Nettyzen Access - Front End -->
+          <div class="experience__card">
+            <div class="exp-header">
+              <div class="exp-role">
+                <span class="exp-period">Februari 2026 – Mei 2026</span>
+                <h3>Front-End Web Developer</h3>
+                <h4 class="company-name"><i class="fa-solid fa-laptop-code"></i> Nettyzen Access</h4>
+              </div>
+              <span class="work-badge">Project Based Learning</span>
+            </div>
+            <ul class="exp-tasks">
+              <li>Mengembangkan tampilan website dan fitur aplikasi toko AcomptStore.</li>
+              <li>Menyusun komponen tata letak responsif dan sistem navigasi antarmuka yang efisien.</li>
+              <li>Mengimplementasikan fitur pendukung proses transaksi kasir dan pembelian pelanggan.</li>
+              <li>Melakukan penyempurnaan antarmuka untuk meningkatkan kenyamanan pengguna dan efisiensi operasional toko.</li>
+            </ul>
+            <div class="tech-used">
+              <span>PHP</span>
+              <span>Flutter</span>
+              <span>HTML/CSS</span>
+              <span>JavaScript</span>
+            </div>
+          </div>
+
+          <!-- Card 3: Nettyzen Access - UI/UX -->
+          <div class="experience__card">
+            <div class="exp-header">
+              <div class="exp-role">
+                <span class="exp-period">Februari 2026 – Maret 2026</span>
+                <h3>UI/UX Web Designer</h3>
+                <h4 class="company-name"><i class="fa-solid fa-pen-ruler"></i> Nettyzen Access</h4>
+              </div>
+              <span class="work-badge">Project Based Learning</span>
+            </div>
+            <ul class="exp-tasks">
+              <li>Mendesain antarmuka pengguna (User Interface) untuk aplikasi AcomptStore berbasis website.</li>
+              <li>Menentukan tata letak, konten, skema warna, jenis dan ukuran font, serta tombol navigasi.</li>
+              <li>Meningkatkan pengalaman pengguna (UX) agar aplikasi lebih menarik dan mudah digunakan kasir maupun pelanggan.</li>
+              <li>Menyelaraskan alur visual pembelian produk dan pencatatan transaksi terstruktur.</li>
+            </ul>
+            <div class="tech-used">
+              <span>Figma</span>
+              <span>UI/UX Research</span>
+              <span>Wireframing</span>
+              <span>Prototyping</span>
+            </div>
+          </div>
+
+          <!-- Card 4: Nettyzen Access - QA -->
+          <div class="experience__card">
+            <div class="exp-header">
+              <div class="exp-role">
+                <span class="exp-period">Februari 2026 – Mei 2026</span>
+                <h3>Quality Assurance</h3>
+                <h4 class="company-name"><i class="fa-solid fa-list-check"></i> Nettyzen Access</h4>
+              </div>
+              <span class="work-badge">Project Based Learning</span>
+            </div>
+            <ul class="exp-tasks">
+              <li>Melakukan functional testing pada modul aplikasi toko untuk memastikan fitur berjalan sesuai kebutuhan.</li>
+              <li>Mengidentifikasi dan mendokumentasikan setiap bug atau error yang ditemukan.</li>
+              <li>Melakukan pengujian ulang (retesting) setelah perbaikan bug oleh tim pengembang.</li>
+              <li>Memverifikasi keselarasan fitur sebelum rilis guna meningkatkan kepuasan pengguna.</li>
+            </ul>
+            <div class="tech-used">
+              <span>Functional Testing</span>
+              <span>Bug Reporting</span>
+              <span>Retesting</span>
+              <span>Quality Control</span>
+            </div>
+          </div>
+
+          <!-- Card 5: SENTRA - QA -->
+          <div class="experience__card">
+            <div class="exp-header">
+              <div class="exp-role">
+                <span class="exp-period">Agustus 2026 – Desember 2026</span>
+                <h3>Quality Assurance</h3>
+                <h4 class="company-name"><i class="fa-solid fa-shield-halved"></i> SENTRA</h4>
+              </div>
+              <span class="work-badge">Project Based Learning</span>
+            </div>
+            <ul class="exp-tasks">
+              <li>Melakukan pengujian kualitas sistem (Software QA) pada website pelaporan dinas dan aplikasi pengaduan masyarakat.</li>
+              <li>Melaksanakan functional testing dan regression testing guna menjamin aplikasi stabil dan bebas bug.</li>
+              <li>Mengidentifikasi serta mendokumentasikan issue/bug sebagai bahan evaluasi perbaikan developer.</li>
+              <li>Melakukan retesting setelah pembaruan sistem dan menyusun laporan statistik kualitas sistem.</li>
+            </ul>
+            <div class="tech-used">
+              <span>Software QA</span>
+              <span>Regression Testing</span>
+              <span>Issue Tracking</span>
+              <span>Quality Statistics</span>
+            </div>
+          </div>
+
+          <!-- Card 6: SATGAS KALI -->
+          <div class="experience__card">
+            <div class="exp-header">
+              <div class="exp-role">
+                <span class="exp-period">Juni 2026 – Juli 2026</span>
+                <h3>Game Developer</h3>
+                <h4 class="company-name"><i class="fa-solid fa-gamepad"></i> SATGAS KALI (KMIPN VIII)</h4>
+              </div>
+              <span class="work-badge">Kompetisi Nasional</span>
+            </div>
+            <ul class="exp-tasks">
+              <li>Merancang dan mengembangkan aplikasi permainan SATGAS KALI bertema kebersihan sungai untuk ajang KMIPN VIII.</li>
+              <li>Menentukan alur permainan, tipe gameplay, karakter, dan sound effect yang sesuai tema pelestarian air.</li>
+              <li>Membangun logika permainan menggunakan game engine berbasis HTML5 yaitu Construct.</li>
+              <li>Melakukan uji coba gameplay agar responsif dan menyenangkan untuk dimainkan.</li>
+            </ul>
+            <div class="tech-used">
+              <span>Construct</span>
+              <span>HTML5 Game</span>
+              <span>Game Design</span>
+              <span>Sound Effects</span>
+            </div>
+          </div>
+
+          <!-- Card 7: PT Otak Kanan -->
+          <div class="experience__card">
+            <div class="exp-header">
+              <div class="exp-role">
+                <span class="exp-period">Agustus 2024 – Desember 2024</span>
+                <h3>UI/UX Web Designer</h3>
+                <h4 class="company-name"><i class="fa-solid fa-building"></i> PT. Otak Kanan</h4>
+              </div>
+              <span class="work-badge">Internship</span>
+            </div>
+            <ul class="exp-tasks">
+              <li>Mendesain antarmuka pengguna pada aplikasi BayuQR dan Website Accounting agar modern dan mudah digunakan.</li>
+              <li>Membuat prototipe interaktif untuk validasi alur penggunaan aplikasi sebelum tahap coding.</li>
+              <li>Menyusun komponen desain: tata letak (layout), warna, font, gambar, ikon, hingga tombol navigasi.</li>
+              <li>Memastikan konsistensi tampilan guna meningkatkan kenyamanan dan User Experience (UX).</li>
+            </ul>
+            <div class="tech-used">
+              <span>Figma</span>
+              <span>Canva</span>
+              <span>Interactive Prototyping</span>
+              <span>Design System</span>
+            </div>
+          </div>
+
+          <!-- Card 8: Scrum Master (Status Verifikasi CV) -->
+          <div class="experience__card">
+            <div class="exp-header">
+              <div class="exp-role">
+                <span class="badge-verification"><i class="fa-solid fa-clock-rotate-left"></i> Perlu Verifikasi CV</span>
+                <span class="exp-period">Februari 2022 – Juni 2022</span>
+                <h3>Scrum Master</h3>
+                <h4 class="company-name"><i class="fa-solid fa-users-gear"></i> Aplikasi Nettyzen Access</h4>
+              </div>
+              <span class="work-badge">Project Based Learning</span>
+            </div>
+            <ul class="exp-tasks">
+              <li>Menjelaskan konsep Agile dan Scrum kepada stakeholder dan anggota tim.</li>
+              <li>Memberikan coaching dan arahan kepada anggota tim agar menjalankan tanggung jawab dengan baik.</li>
+              <li>Mengorganisir dan memfasilitasi pertemuan seperti Daily Scrum dan Sprint Planning.</li>
+              <li>Mendampingi anggota tim dalam mengurai kendala teknis kerja harian.</li>
+            </ul>
+            <div class="verification-note-text">
+              <i class="fa-solid fa-triangle-exclamation"></i> Catatan: Tanggal tertulis Feb – Jun 2022 pada dokumen CV. Memerlukan konfirmasi sinkronisasi dengan tahun akademik.
+            </div>
+            <div class="tech-used">
+              <span>Agile / Scrum</span>
+              <span>Sprint Planning</span>
+              <span>Daily Scrum</span>
+              <span>Trello</span>
+            </div>
+          </div>
+
+          <!-- Card 9: ARKAPAN (Status Verifikasi CV) -->
+          <div class="experience__card">
+            <div class="exp-header">
+              <div class="exp-role">
+                <span class="badge-verification"><i class="fa-solid fa-clock-rotate-left"></i> Perlu Verifikasi CV</span>
+                <span class="exp-period">Juli 2026 – Agustus 2023 (Tercantum CV)</span>
+                <h3>Game Developer</h3>
+                <h4 class="company-name"><i class="fa-solid fa-mobile-screen"></i> ARKAPAN – SATGAS KALI (KMIPN VIII)</h4>
+              </div>
+              <span class="work-badge">Kompetisi Nasional</span>
+            </div>
+            <ul class="exp-tasks">
+              <li>Kontribusi pengembangan game SATGAS KALI dan PETA berbasis Android bertema sungai.</li>
+              <li>Menentukan alur permainan, tipe, perancangan karakter, dan antarmuka sentuh layar.</li>
+              <li>Membangun logika permainan menggunakan engine Construct berbasis HTML5/Android.</li>
+            </ul>
+            <div class="verification-note-text">
+              <i class="fa-solid fa-triangle-exclamation"></i> Catatan: Tertulis rentang Juli 2026 – Ags 2023 pada CV. Memerlukan konfirmasi urutan tahun pelaksanaan kompetisi.
+            </div>
+            <div class="tech-used">
+              <span>Construct</span>
+              <span>Android Game</span>
+              <span>Character Design</span>
+            </div>
+          </div>
+
+          <!-- Card 10: Agate Academy (Draft Persiapan MSIB) -->
+          <div class="experience__card">
+            <div class="exp-header">
+              <div class="exp-role">
+                <span class="badge-draft"><i class="fa-solid fa-file-pen"></i> Draft / Persiapan MSIB</span>
+                <span class="exp-period">Februari 2027 – Juni 2027</span>
+                <h3>Game Artist</h3>
+                <h4 class="company-name"><i class="fa-solid fa-gamepad"></i> Agate Academy (MSIB Batch 6 Kampus Merdeka)</h4>
+              </div>
+              <span class="work-badge">MSIB (Draft)</span>
+            </div>
+            <ul class="exp-tasks">
+              <li>Merancang antarmuka (User Interface) game Code Crusader: Anti-Virus Assault menggunakan Figma dari low-fi wireframe hingga prototipe.</li>
+              <li>Membuat elemen UI seperti tombol, ikon, health bar, kotak dialog, background, serta tata letak menu.</li>
+              <li>Membuat aset 3D (rumah, karakter, box container) menggunakan Blender untuk lingkungan game.</li>
+              <li>Mengembangkan efek visual (VFX Gate) di Unity untuk meningkatkan kualitas visual bermain.</li>
+            </ul>
+            <div class="verification-note-text">
+              <i class="fa-solid fa-circle-info"></i> Catatan: Disimpan sebagai draft rencana kegiatan MSIB Kampus Merdeka berdasarkan data CV.
+            </div>
+            <div class="tech-used">
+              <span>Figma UI</span>
+              <span>Blender 3D</span>
+              <span>Unity VFX</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERTIFIKASI (DENGAN DOKUMENTASI FOTO SERTIFIKAT ASLI) -->
+    <section class="certifications section" id="certifications">
+      <div class="container">
+        <div class="section-title-wrap text-center">
+          <p class="section__subtitle">Validasi Kemampuan & Partisipasi</p>
+          <h2 class="section__title">Sertifikasi & Pelatihan</h2>
+          <div class="title-bar"></div>
+        </div>
+
+        <div class="cert__container grid" id="certifications-grid">
+          <!-- Card 1: LKMM Pra-TD -->
+          <div class="cert__card" data-cert-id="lkmm-pra-td">
+            <div class="cert__img-wrap" data-img-src="assets/images/certificates/lkmm-pra-td.jpg" data-title="LKMM Pra-TD" data-issuer="Politeknik Negeri Jember" data-date="September 2025" data-desc="Mengikuti kegiatan Latihan Keterampilan Manajemen Mahasiswa Pra-Tingkat Dasar (LKMM Pra-TD) untuk mengembangkan kemampuan kepemimpinan, komunikasi, kerja sama tim, manajemen waktu, serta meningkatkan kedisiplinan dan tanggung jawab berorganisasi.">
+              <img src="assets/images/certificates/lkmm-pra-td.jpg" alt="Sertifikat LKMM Pra-TD" class="cert__img" onerror="handleCertImgError(this)">
+              <div class="cert__no-img" style="display: none;">
+                <i class="fa-solid fa-award"></i>
+                <span>LKMM Pra-TD</span>
+                <small>Foto sertifikat dapat ditambahkan di assets/images/certificates/lkmm-pra-td.jpg</small>
+              </div>
+              <div class="cert__img-overlay">
+                <i class="fa-solid fa-up-right-and-down-left-from-center"></i> Pratinjau Sertifikat
+              </div>
+            </div>
+            <div class="cert__details">
+              <span class="cert__badge">Kepemimpinan & Manajemen</span>
+              <h3 class="cert__title">LKMM Pra-TD</h3>
+              <p class="cert__issuer"><i class="fa-solid fa-building-columns"></i> Politeknik Negeri Jember</p>
+              <span class="cert__date"><i class="fa-regular fa-calendar-check"></i> September 2025</span>
+              <p class="cert__desc">Mengikuti kegiatan Latihan Keterampilan Manajemen Mahasiswa Pra-Tingkat Dasar (LKMM Pra-TD) untuk mengembangkan kemampuan kepemimpinan, komunikasi, kerja sama tim, dan manajemen waktu.</p>
+              <button class="cert__btn-preview" data-cert-target="lkmm-pra-td">
+                <i class="fa-solid fa-eye"></i> Lihat Sertifikat
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 2: PKKMB -->
+          <div class="cert__card" data-cert-id="pkkmb">
+            <div class="cert__img-wrap" data-img-src="assets/images/certificates/pkkmb.jpg" data-title="Sertifikat PKKMB" data-issuer="Politeknik Negeri Jember" data-date="Agustus 2025" data-desc="Pengenalan Kehidupan Kampus bagi Mahasiswa Baru (PKKMB) di Politeknik Negeri Jember sebagai pembekalan wawasan kebangsaan, integritas akademik, dan adaptasi kultur perguruan tinggi.">
+              <img src="assets/images/certificates/pkkmb.jpg" alt="Sertifikat PKKMB Polije" class="cert__img" onerror="handleCertImgError(this)">
+              <div class="cert__no-img" style="display: none;">
+                <i class="fa-solid fa-award"></i>
+                <span>Sertifikat PKKMB</span>
+                <small>Foto sertifikat dapat ditambahkan di assets/images/certificates/pkkmb.jpg</small>
+              </div>
+              <div class="cert__img-overlay">
+                <i class="fa-solid fa-up-right-and-down-left-from-center"></i> Pratinjau Sertifikat
+              </div>
+            </div>
+            <div class="cert__details">
+              <span class="cert__badge">Pengenalan Kampus</span>
+              <h3 class="cert__title">Sertifikat PKKMB</h3>
+              <p class="cert__issuer"><i class="fa-solid fa-building-columns"></i> Politeknik Negeri Jember</p>
+              <span class="cert__date"><i class="fa-regular fa-calendar-check"></i> Agustus 2025</span>
+              <p class="cert__desc">Mengikuti kegiatan Pengenalan Kehidupan Kampus bagi Mahasiswa Baru di Politeknik Negeri Jember guna pembinaan wawasan kebangsaan dan etika akademik.</p>
+              <button class="cert__btn-preview" data-cert-target="pkkmb">
+                <i class="fa-solid fa-eye"></i> Lihat Sertifikat
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 3: TOEFL -->
+          <div class="cert__card" data-cert-id="toefl">
+            <div class="cert__img-wrap" data-img-src="assets/images/certificates/toefl.jpg" data-title="Test of English as a Foreign Language (TOEFL)" data-issuer="Kampus 3 Nganjuk, Politeknik Negeri Jember" data-date="Juli 2026" data-desc="Sertifikasi kemampuan Bahasa Inggris resmi yang diselenggarakan oleh Kampus 3 Nganjuk, Politeknik Negeri Jember.">
+              <img src="assets/images/certificates/toefl.jpg" alt="Sertifikat TOEFL" class="cert__img" onerror="handleCertImgError(this)">
+              <div class="cert__no-img" style="display: none;">
+                <i class="fa-solid fa-award"></i>
+                <span>Sertifikat TOEFL</span>
+                <small>Foto sertifikat dapat ditambahkan di assets/images/certificates/toefl.jpg</small>
+              </div>
+              <div class="cert__img-overlay">
+                <i class="fa-solid fa-up-right-and-down-left-from-center"></i> Pratinjau Sertifikat
+              </div>
+            </div>
+            <div class="cert__details">
+              <span class="cert__badge">Kemahiran Bahasa</span>
+              <h3 class="cert__title">TOEFL</h3>
+              <p class="cert__issuer"><i class="fa-solid fa-building-columns"></i> Kampus 3 Nganjuk, Polije</p>
+              <span class="cert__date"><i class="fa-regular fa-calendar-check"></i> Juli 2026</span>
+              <p class="cert__desc">Sertifikasi kemampuan Bahasa Inggris, diselenggarakan di Kampus 3 Nganjuk Politeknik Negeri Jember.</p>
+              <button class="cert__btn-preview" data-cert-target="toefl">
+                <i class="fa-solid fa-eye"></i> Lihat Sertifikat
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 4: Ospek TIF -->
+          <div class="cert__card" data-cert-id="ospek-tif">
+            <div class="cert__img-wrap" data-img-src="assets/images/certificates/ospek-tif.jpg" data-title="Ospek Jurusan Teknologi Informasi" data-issuer="Jurusan Teknologi Informasi - Politeknik Negeri Jember" data-date="Oktober 2025" data-desc="Mengikuti kegiatan pengenalan jurusan dan lingkungan akademik kampus Teknologi Informasi Politeknik Negeri Jember.">
+              <img src="assets/images/certificates/ospek-tif.jpg" alt="Sertifikat Ospek Jurusan Teknologi Informasi" class="cert__img" onerror="handleCertImgError(this)">
+              <div class="cert__no-img" style="display: none;">
+                <i class="fa-solid fa-award"></i>
+                <span>Ospek Jurusan TIF</span>
+                <small>Foto sertifikat dapat ditambahkan di assets/images/certificates/ospek-tif.jpg</small>
+              </div>
+              <div class="cert__img-overlay">
+                <i class="fa-solid fa-up-right-and-down-left-from-center"></i> Pratinjau Sertifikat
+              </div>
+            </div>
+            <div class="cert__details">
+              <span class="cert__badge">Pengenalan Jurusan</span>
+              <h3 class="cert__title">Ospek Jurusan Teknologi Informasi</h3>
+              <p class="cert__issuer"><i class="fa-solid fa-building-columns"></i> Jurusan TIF - Polije</p>
+              <span class="cert__date"><i class="fa-regular fa-calendar-check"></i> Oktober 2025</span>
+              <p class="cert__desc">Mengikuti kegiatan pengenalan jurusan dan lingkungan kampus Teknologi Informasi untuk mengenal kultur akademik serta teknologi rekayasa.</p>
+              <button class="cert__btn-preview" data-cert-target="ospek-tif">
+                <i class="fa-solid fa-eye"></i> Lihat Sertifikat
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROYEK (BERBASIS TEKS & IKON, TANPA GAMBAR DUMMY) -->
+    <section class="projects section" id="projects">
+      <div class="container">
+        <div class="section-title-wrap text-center">
+          <p class="section__subtitle">Karya & Kreasi</p>
+          <h2 class="section__title">Koleksi Proyek Pilihan</h2>
+          <div class="title-bar"></div>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="projects__filters">
+          <button class="filter-btn active" data-filter="all">Semua Proyek</button>
+          <button class="filter-btn" data-filter="web">Web / Aplikasi</button>
+          <button class="filter-btn" data-filter="uiux">UI/UX</button>
+          <button class="filter-btn" data-filter="qa">Quality Assurance</button>
+          <button class="filter-btn" data-filter="game">Game Development</button>
+        </div>
+
+        <div class="projects__container grid" id="projects-grid">
+          <!-- Proyek 1: UMKM BU Nanda -->
+          <div class="project__card" data-category="web" data-id="umkm-bu-nanda">
+            <div class="project__header">
+              <div class="project__icon-box"><i class="fa-solid fa-cash-register"></i></div>
+              <span class="project__cat">Web / Desktop App</span>
+            </div>
+            <h3 class="project__title">UMKM BU Nanda — Aplikasi Kasir</h3>
+            <div class="project__role"><i class="fa-solid fa-user-gear"></i> Peran: Software Developer</div>
+            <p class="project__desc">
+              Pengembangan program perangkat lunak aplikasi kasir pada bagian transaksi penjualan untuk membantu pengelolaan pesanan kafe/warung UMKM secara akurat dan efisien.
+            </p>
+            <div class="project__tags">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>JavaScript</span>
+              <span>Analisis Sistem</span>
+            </div>
+            <div class="project__footer">
+              <button class="view-detail-btn" data-target="umkm-bu-nanda">
+                <i class="fa-solid fa-circle-info"></i> Lihat Detail
+              </button>
+            </div>
+          </div>
+
+          <!-- Proyek 2: AcomptStore -->
+          <div class="project__card" data-category="web" data-id="acomptstore">
+            <div class="project__header">
+              <div class="project__icon-box"><i class="fa-solid fa-store"></i></div>
+              <span class="project__cat">Web / E-Commerce</span>
+            </div>
+            <h3 class="project__title">AcomptStore</h3>
+            <div class="project__role"><i class="fa-solid fa-user-pen"></i> Peran: Front-End & UI/UX Designer</div>
+            <p class="project__desc">
+              Pengembangan antarmuka website dan fitur sistem AcomptStore menggunakan PHP dan Flutter guna mempermudah pembelian pelanggan dan pencatatan transaksi toko terstruktur.
+            </p>
+            <div class="project__tags">
+              <span>PHP</span>
+              <span>Flutter</span>
+              <span>HTML/CSS</span>
+              <span>JavaScript</span>
+            </div>
+            <div class="project__footer">
+              <button class="view-detail-btn" data-target="acomptstore">
+                <i class="fa-solid fa-circle-info"></i> Lihat Detail
+              </button>
+            </div>
+          </div>
+
+          <!-- Proyek 3: Nettyzen Access -->
+          <div class="project__card" data-category="web" data-id="nettyzen-access">
+            <div class="project__header">
+              <div class="project__icon-box"><i class="fa-solid fa-laptop-code"></i></div>
+              <span class="project__cat">Web Development & QA</span>
+            </div>
+            <h3 class="project__title">Nettyzen Access Application</h3>
+            <div class="project__role"><i class="fa-solid fa-user-check"></i> Peran: Front-End & Quality Assurance</div>
+            <p class="project__desc">
+              Mengembangkan tampilan komponen navigasi website serta melakukan serangkaian pengujian fungsional dan retesting untuk memastikan seluruh fitur berjalan optimal.
+            </p>
+            <div class="project__tags">
+              <span>PHP</span>
+              <span>JavaScript</span>
+              <span>HTML/CSS</span>
+              <span>Manual Testing</span>
+            </div>
+            <div class="project__footer">
+              <button class="view-detail-btn" data-target="nettyzen-access">
+                <i class="fa-solid fa-circle-info"></i> Lihat Detail
+              </button>
+            </div>
+          </div>
+
+          <!-- Proyek 4: SENTRA -->
+          <div class="project__card" data-category="qa" data-id="sentra">
+            <div class="project__header">
+              <div class="project__icon-box"><i class="fa-solid fa-list-check"></i></div>
+              <span class="project__cat">Software QA</span>
+            </div>
+            <h3 class="project__title">SENTRA</h3>
+            <div class="project__role"><i class="fa-solid fa-shield-halved"></i> Peran: Software Quality Assurance</div>
+            <p class="project__desc">
+              Pengujian kualitas sistem (SQA) pada website pelaporan kedinasan dan aplikasi pengaduan masyarakat melalui functional testing dan regression testing mendalam.
+            </p>
+            <div class="project__tags">
+              <span>Software QA</span>
+              <span>Functional Testing</span>
+              <span>Regression Testing</span>
+              <span>Quality Metrics</span>
+            </div>
+            <div class="project__footer">
+              <button class="view-detail-btn" data-target="sentra">
+                <i class="fa-solid fa-circle-info"></i> Lihat Detail
+              </button>
+            </div>
+          </div>
+
+          <!-- Proyek 5: SATGAS KALI -->
+          <div class="project__card" data-category="game" data-id="satgas-kali">
+            <div class="project__header">
+              <div class="project__icon-box"><i class="fa-solid fa-gamepad"></i></div>
+              <span class="project__cat">Game Development</span>
+            </div>
+            <h3 class="project__title">SATGAS KALI</h3>
+            <div class="project__role"><i class="fa-solid fa-dice-d20"></i> Peran: Game Developer (KMIPN VIII)</div>
+            <p class="project__desc">
+              Pengembangan permainan bertema edukasi kebersihan sungai untuk ajang KMIPN VIII menggunakan game engine berbasis HTML5 Construct dengan sound effect interaktif.
+            </p>
+            <div class="project__tags">
+              <span>Construct</span>
+              <span>HTML5 Game</span>
+              <span>Game Design</span>
+              <span>Audio Effects</span>
+            </div>
+            <div class="project__footer">
+              <button class="view-detail-btn" data-target="satgas-kali">
+                <i class="fa-solid fa-circle-info"></i> Lihat Detail
+              </button>
+            </div>
+          </div>
+
+          <!-- Proyek 6: ARKAPAN -->
+          <div class="project__card" data-category="game" data-id="arkapan">
+            <div class="project__header">
+              <div class="project__icon-box"><i class="fa-solid fa-mobile-screen-button"></i></div>
+              <span class="project__cat">Game Development</span>
+            </div>
+            <h3 class="project__title">ARKAPAN — Android Environmental Game</h3>
+            <div class="project__role"><i class="fa-solid fa-mobile-screen"></i> Peran: Game Developer (KMIPN VIII)</div>
+            <p class="project__desc">
+              Kontribusi perancangan karakter, alur permainan, dan tata kontrol layar sentuh pada aplikasi game Android bertema lingkungan sungai menggunakan Construct.
+            </p>
+            <div class="project__tags">
+              <span>Construct</span>
+              <span>Android Game</span>
+              <span>Sprite Design</span>
+              <span>Level Design</span>
+            </div>
+            <div class="project__footer">
+              <button class="view-detail-btn" data-target="arkapan">
+                <i class="fa-solid fa-circle-info"></i> Lihat Detail
+              </button>
+            </div>
+          </div>
+
+          <!-- Proyek 7: BayuQR & Website Accounting -->
+          <div class="project__card" data-category="uiux" data-id="bayuqr-accounting">
+            <div class="project__header">
+              <div class="project__icon-box"><i class="fa-solid fa-pen-ruler"></i></div>
+              <span class="project__cat">UI/UX Design</span>
+            </div>
+            <h3 class="project__title">BayuQR & Website Accounting</h3>
+            <div class="project__role"><i class="fa-solid fa-palette"></i> Peran: UI/UX Web Designer (PT Otak Kanan)</div>
+            <p class="project__desc">
+              Perancangan desain antarmuka, pembuatan prototipe interaktif, dan standarisasi elemen visual (warna, tipografi, tombol) untuk aplikasi BayuQR dan Website Accounting.
+            </p>
+            <div class="project__tags">
+              <span>Figma</span>
+              <span>Canva</span>
+              <span>Prototyping</span>
+              <span>Style Guide</span>
+            </div>
+            <div class="project__footer">
+              <button class="view-detail-btn" data-target="bayuqr-accounting">
+                <i class="fa-solid fa-circle-info"></i> Lihat Detail
+              </button>
+            </div>
+          </div>
+
+          <!-- Proyek 8: Code Crusader (Draft Konfirmasi) -->
+          <div class="project__card" data-category="game" data-id="code-crusader">
+            <div class="project__header">
+              <div class="project__icon-box"><i class="fa-solid fa-shield-virus"></i></div>
+              <span class="project__cat">Game Art / UI/UX (Draft)</span>
+            </div>
+            <h3 class="project__title">Code Crusader: Anti-Virus Assault</h3>
+            <div class="project__role"><i class="fa-solid fa-cube"></i> Peran: Game Artist & UI Designer</div>
+            <p class="project__desc">
+              Rancangan desain antarmuka Figma, pemodelan aset 3D lingkungan di Blender, dan penerapan efek visual (VFX Gate) di Unity (Draft persiapan MSIB Kampus Merdeka).
+            </p>
+            <div class="project__tags">
+              <span>Figma</span>
+              <span>Blender 3D</span>
+              <span>Unity VFX</span>
+              <span>Game Art</span>
+            </div>
+            <div class="project__footer">
+              <button class="view-detail-btn" data-target="code-crusader">
+                <i class="fa-solid fa-circle-info"></i> Lihat Detail
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ORGANISASI, PUBLIC SPEAKING, DAN KEPANITIAAN -->
+    <section class="activities section" id="activities">
+      <div class="container">
+        <div class="section-title-wrap text-center">
+          <p class="section__subtitle">Pengembangan Diri & Kontribusi Sosial</p>
+          <h2 class="section__title">Organisasi, Public Speaking & Kepanitiaan</h2>
+          <div class="title-bar"></div>
+        </div>
+
+        <div class="activities__container grid">
+          <!-- Organisasi -->
+          <div class="activity__card">
+            <div class="activity__header">
+              <div class="activity__icon"><i class="fa-solid fa-users-gear"></i></div>
+              <div class="activity__meta">
+                <span class="activity__category">Organisasi Kemahasiswaan</span>
+                <span class="activity__period"><i class="fa-regular fa-calendar"></i> 2025 – 2026</span>
+              </div>
+            </div>
+            <h3 class="activity__title">Divisi Pengembangan Sumber Daya Manusia (PSDM)</h3>
+            <h4 class="activity__org">Forum Komunikasi Mahasiswa Kampus Tiga (Politeknik Negeri Jember)</h4>
+            <p class="activity__desc">
+              Melaksanakan program kerja pengaktifan media Website, Instagram, dan YouTube, penyusunan jadwal kepenulisan karya, pembuatan rubrik dan majalah cetak, penyusunan mini buletin anggota magang, buletin pengurus, serta perlengkapan mahasiswa.
+            </p>
+          </div>
+
+          <!-- Public Speaking 1 -->
+          <div class="activity__card">
+            <div class="activity__header">
+              <div class="activity__icon"><i class="fa-solid fa-bullhorn"></i></div>
+              <div class="activity__meta">
+                <span class="activity__category">Public Speaking</span>
+                <span class="activity__period"><i class="fa-regular fa-calendar"></i> Juli 2023</span>
+              </div>
+            </div>
+            <h3 class="activity__title">Speaker (Pemateri) — LDK OSIS & POLTAR</h3>
+            <h4 class="activity__org">SMK Negeri 1 Giritontro</h4>
+            <p class="activity__desc">
+              Menjadi narasumber dalam kegiatan Latihan Dasar Kepemimpinan (LDK) gabungan OSIS dan Polisi Taruna untuk menumbuhkan nilai-nilai integritas, kedisiplinan taruna, dan kepemimpinan adaptif bagi calon pengurus.
+            </p>
+          </div>
+
+          <!-- Public Speaking 2 -->
+          <div class="activity__card">
+            <div class="activity__header">
+              <div class="activity__icon"><i class="fa-solid fa-comments"></i></div>
+              <div class="activity__meta">
+                <span class="activity__category">Public Speaking</span>
+                <span class="activity__period"><i class="fa-regular fa-calendar"></i> Juli 2023</span>
+              </div>
+            </div>
+            <h3 class="activity__title">Moderator — Rapat Keberlanjutan Pengurus Polisi Taruna</h3>
+            <h4 class="activity__org">Unit Kegiatan Polisi Taruna Provos 1 HUMAS SMK Negeri 1 Giritontro</h4>
+            <p class="activity__desc">
+              Memimpin dan memfasilitasi jalannya musyawarah evaluasi kinerja kepengurusan serta rapat kesinambungan regenerasi kepengurusan Korps Polisi Taruna angkatan 2023.
+            </p>
+          </div>
+
+          <!-- Kepanitiaan 1 -->
+          <div class="activity__card">
+            <div class="activity__header">
+              <div class="activity__icon"><i class="fa-solid fa-boxes-packing"></i></div>
+              <div class="activity__meta">
+                <span class="activity__category">Kepanitiaan Acara</span>
+                <span class="activity__period"><i class="fa-regular fa-calendar"></i> September 2026</span>
+              </div>
+            </div>
+            <h3 class="activity__title">Divisi Perlengkapan — Nganjuk Skill Up</h3>
+            <h4 class="activity__org">Turnamen Mobile Legends: Bang Bang | Polije Kampus 3</h4>
+            <p class="activity__desc">
+              Bertanggung jawab atas ketersediaan logistik teknis, tata kelola fasilitas pertandingan turnamen e-sport, dan kelancaran sarana jaringan selama jalannya kegiatan.
+            </p>
+          </div>
+
+          <!-- Kepanitiaan 2 -->
+          <div class="activity__card">
+            <div class="activity__header">
+              <div class="activity__icon"><i class="fa-solid fa-handshake"></i></div>
+              <div class="activity__meta">
+                <span class="activity__category">Kepanitiaan Acara</span>
+                <span class="activity__period"><i class="fa-regular fa-calendar"></i> Oktober 2026</span>
+              </div>
+            </div>
+            <h3 class="activity__title">Hubungan Masyarakat — Nganjuk Skill Up</h3>
+            <h4 class="activity__org">Classmeet Futsal Antar Jurusan | Polije Kampus 3</h4>
+            <p class="activity__desc">
+              Mengelola koordinasi publikasi komunikasi antar jurusan, distribusi informasi teknis pertandingan, serta kemitraan dan perizinan sarana olahraga.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRESTASI / PENGHARGAAN -->
+    <section class="achievements section" id="achievements">
+      <div class="container">
+        <div class="section-title-wrap text-center">
+          <p class="section__subtitle">Dedikasi & Apresiasi</p>
+          <h2 class="section__title">Prestasi & Penghargaan</h2>
+          <div class="title-bar"></div>
+        </div>
+
+        <div class="achieve__grid">
+          <!-- Penghargaan Nyata Sesuai CV -->
+          <div class="achieve__card">
+            <div class="achieve__icon">
+              <i class="fa-solid fa-trophy trophy-gold"></i>
+            </div>
+            <div class="achieve__info">
+              <span class="achieve__year">September 2025</span>
+              <h3 class="achieve__title">Best Spirit — Aplikasi Sunshine Florist</h3>
+              <p class="achieve__org"><i class="fa-solid fa-award"></i> Expo Pekan Ilmiah Mahasiswa Teknologi Informasi (EPIM TI) | Politeknik Negeri Jember</p>
+              <p class="achieve__desc">
+                Dianugerahi predikat penghargaan <strong>Best Spirit</strong> dalam ajang bergengsi Expo Pekan Ilmiah Mahasiswa Teknologi Informasi (EPIM TI) Politeknik Negeri Jember atas antusiasme, kreativitas tim, dan solusi inovatif dalam perancangan produk aplikasi Sunshine Florist.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- KONTAK -->
+    <section class="contact section" id="contact">
+      <div class="container">
+        <div class="section-title-wrap text-center">
+          <p class="section__subtitle">Mari Berdiskusi</p>
+          <h2 class="section__title">Hubungi Saya</h2>
+          <div class="title-bar"></div>
+        </div>
+
+        <div class="contact__container grid">
+          <!-- Contact Info Cards -->
+          <div class="contact__info">
+            <div class="contact__card">
+              <div class="contact__card-icon">
+                <i class="fa-solid fa-envelope-open-text"></i>
+              </div>
+              <div class="contact__card-content">
+                <h4>Kirim Email</h4>
+                <p>aryashayusuf@gmail.com</p>
+                <a href="mailto:aryashayusuf@gmail.com" class="contact__btn-link">Tulis Pesan <i class="fa-solid fa-chevron-right"></i></a>
+              </div>
+            </div>
+
+            <div class="contact__card">
+              <div class="contact__card-icon">
+                <i class="fa-brands fa-whatsapp"></i>
+              </div>
+              <div class="contact__card-content">
+                <h4>WhatsApp Pribadi</h4>
+                <p>+62 812 258 863 092</p>
+                <a href="https://wa.me/62812258863092" target="_blank" rel="noopener noreferrer" class="contact__btn-link">Chat Sekarang <i class="fa-solid fa-chevron-right"></i></a>
+              </div>
+            </div>
+
+            <div class="contact__card">
+              <div class="contact__card-icon">
+                <i class="fa-brands fa-linkedin"></i>
+              </div>
+              <div class="contact__card-content">
+                <h4>Profil LinkedIn</h4>
+                <p>Aryasha Yusuf Pratama</p>
+                <a href="https://www.linkedin.com/in/aryasha-yusuf-pratama-3a4776416" target="_blank" rel="noopener noreferrer" class="contact__btn-link">Kunjungi Profil <i class="fa-solid fa-chevron-right"></i></a>
+              </div>
+            </div>
+
+            <div class="contact__card">
+              <div class="contact__card-icon">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div class="contact__card-content">
+                <h4>Domisili & Kampus</h4>
+                <p>Wonogiri, Jawa Tengah</p>
+                <span class="contact__status"><i class="fa-solid fa-building-columns"></i> D4 Teknik Informatika, Politeknik Negeri Jember</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact__form-wrapper">
+            <form class="contact__form" id="contact-form">
+              <h3 class="form-title">Tinggalkan Pesan Anda</h3>
+              <p class="form-desc">Pesan akan diteruskan ke aplikasi email Anda menuju alamat aryashayusuf@gmail.com.</p>
+
+              <div class="form-group">
+                <label for="name" class="form-label">Nama Lengkap <span class="required">*</span></label>
+                <div class="input-wrap">
+                  <i class="fa-regular fa-user input-icon"></i>
+                  <input type="text" id="name" name="name" class="form-input" placeholder="Masukkan nama Anda" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="email" class="form-label">Alamat Email <span class="required">*</span></label>
+                <div class="input-wrap">
+                  <i class="fa-regular fa-envelope input-icon"></i>
+                  <input type="email" id="email" name="email" class="form-input" placeholder="nama@email.com" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="subject" class="form-label">Subjek Pesan</label>
+                <div class="input-wrap">
+                  <i class="fa-solid fa-tag input-icon"></i>
+                  <input type="text" id="subject" name="subject" class="form-input" placeholder="Kolaborasi Proyek / Pertanyaan">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="message" class="form-label">Pesan / Rincian <span class="required">*</span></label>
+                <div class="input-wrap textarea-wrap">
+                  <i class="fa-regular fa-comment-dots input-icon textarea-icon"></i>
+                  <textarea id="message" name="message" rows="5" class="form-input" placeholder="Tuliskan pesan atau pertanyaan Anda di sini..." required></textarea>
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-submit" id="submit-btn">
+                <span class="btn-text"><i class="fa-regular fa-paper-plane"></i> Kirim Pesan via Email</span>
+                <span class="spinner" id="form-spinner"></span>
+              </button>
+
+              <div class="form-alert" id="form-alert"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- MODAL DETAIL PROYEK (BERBASIS TEKS & IKON, TANPA GAMBAR DUMMY) -->
+  <div class="modal" id="project-modal" aria-hidden="true" role="dialog" aria-labelledby="project-modal-title">
+    <div class="modal__overlay" id="modal-overlay"></div>
+    <div class="modal__container">
+      <button class="modal__close" id="modal-close" aria-label="Tutup Rincian Proyek">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div class="modal__body" id="modal-content">
+        <!-- Konten disuntikkan dinamis dari portfolio-data.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL PRATINJAU GAMBAR SERTIFIKAT ASLI -->
+  <div class="modal" id="certificate-modal" aria-hidden="true" role="dialog" aria-labelledby="cert-modal-title">
+    <div class="modal__overlay" id="cert-modal-overlay"></div>
+    <div class="modal__container cert-modal__container">
+      <button class="modal__close" id="cert-modal-close" aria-label="Tutup Pratinjau Sertifikat">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div class="cert-modal__body">
+        <div class="cert-modal__img-wrap">
+          <img id="cert-modal-img" src="" alt="Pratinjau Sertifikat Asli" class="cert-modal__img">
+        </div>
+        <div class="cert-modal__info">
+          <h3 id="cert-modal-title" class="cert-modal__title"></h3>
+          <div class="cert-modal__meta">
+            <span id="cert-modal-issuer" class="cert-modal__issuer"></span>
+            <span id="cert-modal-date" class="cert-modal__date"></span>
+          </div>
+          <p id="cert-modal-desc" class="cert-modal__desc"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a href="#home" class="footer__logo">
+            <span class="logo-icon"><i class="fa-solid fa-code"></i></span>
+            <span class="logo-text">Aryasha<span class="logo-accent">.dev</span><span class="logo-dot">.</span></span>
+          </a>
+          <p class="footer__tagline">
+            Mahasiswa D4 Teknik Informatika Politeknik Negeri Jember. Mengembangkan solusi digital yang berdaya guna melalui perancangan antarmuka, pengujian mutu aplikasi, dan rekayasa perangkat lunak.
+          </p>
+        </div>
+
+        <div class="footer__nav-links">
+          <h4>Navigasi Cepat</h4>
+          <ul>
+            <li><a href="#about">Profil & Keahlian</a></li>
+            <li><a href="#education">Riwayat Pendidikan</a></li>
+            <li><a href="#experience">Pengalaman Kerja</a></li>
+            <li><a href="#certifications">Sertifikasi</a></li>
+            <li><a href="#projects">Koleksi Proyek</a></li>
+            <li><a href="#activities">Organisasi & Kegiatan</a></li>
+            <li><a href="#achievements">Prestasi</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__newsletter">
+          <h4>Kontak & Jejaring</h4>
+          <p>Terbuka untuk kolaborasi proyek, diskusi seputar UI/UX, Software Quality Assurance, dan pengembangan aplikasi.</p>
+          <div class="footer__socials">
+            <a href="https://www.linkedin.com/in/aryasha-yusuf-pratama-3a4776416" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="mailto:aryashayusuf@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://wa.me/62812258863092" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copy">&copy; <span id="current-year"></span> Aryasha Yusuf Pratama. Portofolio Literasi Digital & Pribadi.</p>
+        <p class="footer__credit">Dirancang dengan HTML5, CSS3, dan Vanilla JavaScript.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button -->
+  <a href="#home" class="scrollup" id="scroll-up" aria-label="Kembali ke Atas">
+    <i class="fa-solid fa-arrow-up"></i>
+  </a>
+
+  <!-- Centralized Data & Script -->
+  <script src="portfolio-data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
